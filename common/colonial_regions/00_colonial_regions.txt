@@ -1,75 +1,3 @@
-# Alaska
-colonial_alaska = {
-	color = { 225 225 225 }
-
-	# Random New World
-	tax_income = 0
-	native_size = 8
-	native_ferocity = 1
-	native_hostileness = 4
-
-	trade_goods = {
-		fur = 10
-		fish = 3
-		naval_supplies = 2
-		gold = 2
-	}
-
-	culture = {
-		inuit = 10
-		aleutian = 8
-	}
-
-	religion = {
-		shamanism = 10
-	}
-
-	provinces = {
-		979 978 977 976 975 974 972 2022 2609 2610 2611 2612 2613
-		2481 2482 2483 872 2019 2020 2489 2490 2486 2487 2488 873 2484 2485 874 2604 2605 2606 2607
-		2003 973 2004 2602 2017 2018 2599 2600 2601 2603
-	}
-
-	# Specific
-	names = {
-		trigger = {
-			primary_culture = russian
-		}
-		name = "COLONIAL_ALASKA_Alyeska"
-	}
-	names = {
-		trigger = {
-			OR = {
-				tag = SPA
-				tag = CAS
-				tag = ARA
-			}
-		}
-		name = "COLONIAL_ALASKA_Pacifico_Norte"
-	}
-	# Generic
-	names = {
-		trigger = {
-			any_owned_province = {
-				OR = {
-					area = alaska_area
-					area = east_alaska_area
-				}
-			}
-		}
-		name = "COLONIAL_ALASKA_Alaska"
-	}
-	names = {
-		name = "COLONIAL_CALIFORNIA_Cascadia"
-	}
-	names = {
-		name = "COLONIAL_REGION_New_Root_GetName"
-	}
-	names = {
-		name = "COLONIAL_ALASKA_Aleutia"
-	}
-}
-
 # Canada
 colonial_canada = {
 	color = { 20 50 210 }
@@ -110,6 +38,9 @@ colonial_canada = {
 		2571 2572 2573 2574 2575 2576 2577 2578 2579 2580 2581 2582 2583 2584 2585 2586 2587 2588
 		2589 2590 2591 2592 2593 2594 2595 2596 2597 2670 2671
 		4890 4891 4892 4893 4894 4895 4896 4897 4919 4920
+		979 978 977 976 975 974 972 2022 2609 2610 2611 2612 2613
+		2481 2482 2483 872 2019 2020 2489 2490 2486 2487 2488 873 2484 2485 874 2604 2605 2606 2607
+		2003 973 2004 2602 2017 2018 2599 2600 2601 2603
 	}
 
 	# Specific
@@ -337,6 +268,11 @@ colonial_eastern_america = {
 		2557 2558 2559 2560 2561 2562 2563 2564 2565 2566 2567 2639
 		4626 4625
 		4871 4872 4873 4874 4875 4876 4877 4878 4879 4880 4881 4882 4883 4888 4889 4907 4912 4913 4921
+		893 894 895 897 899 900 915 916 918 919 920 921 942 943 896 917 909 906 898 901 903
+		907 908 905 904 902 944 945 914 913 912 911 910 1809 2005 2006 2007 2008 2009 2014 2016
+		2501 2502 2503 2504 2505 2506 2507 2508 2509 2510 2511 2512 2513 2514 2515 2516 2517 2518 2519
+		2520 2521 2522 2523 2524 2528 2529 2530 2598 2625 2672
+		4884 4885 4886 4887 4898 4899 4900 4901 4902 4903 4904 4905 4906 4908 4914 4915 4916 4917 4918 4922 4923
 	}
 
 	# Specific
@@ -426,255 +362,6 @@ colonial_eastern_america = {
 	}
 }
 
-# Louisiana
-colonial_louisiana = {
-	color = { 33 87 161 }
-
-	# Random New World
-	tax_income = 1
-	native_size = 18
-	native_ferocity = 2
-	native_hostileness = 6
-
-	trade_goods = {
-		fur = 10
-		fish = 1
-		grain = 11
-		cotton = 7
-		iron = 1
-	}
-
-	culture = {
-		nakota = 2
-		dakota = 8
-		chiwere = 3
-		pawnee = 10
-		osage = 3
-		caddo = 6
-		cheyenne = 1
-		shoshone = 1
-	}
-
-	religion = {
-		shamanism = 20
-		animism = 20
-	}
-
-	provinces = {
-		893 894 895 897 899 900 915 916 918 919 920 921 942 943 896 917 909 906 898 901 903
-		907 908 905 904 902 944 945 914 913 912 911 910 1809 2005 2006 2007 2008 2009 2014 2016
-		2501 2502 2503 2504 2505 2506 2507 2508 2509 2510 2511 2512 2513 2514 2515 2516 2517 2518 2519
-		2520 2521 2522 2523 2524 2528 2529 2530 2598 2625 2672
-		4884 4885 4886 4887 4898 4899 4900 4901 4902 4903 4904 4905 4906 4908 4914 4915 4916 4917 4918 4922 4923
-	}
-
-	# Specific
-	names = {
-		trigger = {
-			OR = {
-				tag = FRA
-				culture_group = french
-			}
-		}
-		name = "COLONIAL_LOUISIANA_Root_Culture_GetGroupName_Louisiana"
-	}
-	names = {
-		trigger = {
-			OR = {
-				tag = FRA
-				culture_group = french
-			}
-		}
-		name = "COLONIAL_LOUISIANA_Manitounie"
-	}
-	names = {
-		trigger = {
-			OR = {
-				tag = FRA
-				culture_group = french
-			}
-			OR = {
-				owns = 915 # Illinois
-				owns = 916 # Kaskaskia
-				owns = 917 # Cahokia
-			}
-		}
-		name = "PROV915"
-	}
-	# Generic
-	names = {
-		name = "COLONIAL_LOUISIANA_Root_Culture_GetName_Louisiana"
-	}
-	names = {
-		name = "COLONIAL_REGION_New_Root_GetName"
-	}
-	names = {
-		name = "COLONIAL_LOUISIANA_Mississippi"
-	}
-	names = {
-		name = "COLONIAL_LOUISIANA_Manitounie"
-	}
-	names = {
-		trigger = {
-			owns = 948 # Ohio
-		}
-		name = "PROV948"
-	}
-	names = {
-		trigger = {
-			OR = {
-				owns = 915 # Illinois
-				owns = 916 # Kaskaskia
-				owns = 917 # Cahokia
-			}
-		}
-		name = "PROV915"
-	}
-	names = {
-		trigger = {
-			OR = {
-				owns = 900 # Tamaroa
-				owns = 902 # Missouri
-			}
-		}
-		name = "PROV902"
-	}
-	names = {
-		trigger = {
-			owns = 897 # Quapaw
-		}
-		name = "COLONIAL_LOUISIANA_Arkansas"
-	}
-	names = {
-		trigger = {
-			OR = {
-				owns = 945 # Michigan
-				owns = 944 # Potawatomi
-			}
-		}
-		name = "PROV945"
-	}
-	names = {
-		trigger = {
-			OR = {
-				owns = 912 # Sauk
-				owns = 913 # Fox
-				owns = 914 # Winnebago
-			}
-		}
-		name = "COLONIAL_LOUISIANA_Wisconsin"
-	}
-	names = {
-		trigger = {
-			owns = 905 # Iowa
-		}
-		name = "PROV905"
-	}
-	names = {
-		trigger = {
-			owns = 908 # Minnesota
-		}
-		name = "PROV908"
-	}
-	names = {
-		trigger = {
-			owns = 898 # Kansas
-		}
-		name = "PROV898"
-	}
-	names = {
-		trigger = {
-			OR = {
-				owns = 903 # Omaha
-				owns = 901 # Pawnee
-			}
-		}
-		name = "COLONIAL_LOUISIANA_Nebraska"
-	}
-	names = {
-		trigger = {
-			OR = {
-				owns = 906 # Yankton
-				owns = 907 # Dakota
-			}
-		}
-		name = "PROV907"
-	}
-}
-
-# California
-colonial_california = {
-	color = { 200 117 43 }
-
-	# Random New World
-	tax_income = 1
-	native_size = 8
-	native_ferocity = 1
-	native_hostileness = 3
-
-	trade_goods = {
-		fur = 4
-		grain = 3
-		salt = 1
-		wool = 2
-	}
-
-	culture = {
-		shoshone = 10
-		piman = 8
-		navajo = 1
-	}
-
-	religion = {
-		shamanism = 4
-		animism = 10
-	}
-
-	provinces = {
-		868 867 876 875 870 869 871 2021
-		2476 2477 2478 2479 2480 2491
-		2493
-		4638 4637 4636 4635 4634
-		865 866 2620 4639 4577 2616 4650 862 4649 877 4633 # beja california, arizona, and sonoria
-	}
-
-	# Specific
-	names = {
-		trigger = {
-			OR = {
-				tag = GBR
-				tag = ENG
-			}
-			culture_group = british
-		}
-		name = "COLONIAL_CALIFORNIA_Root_Culture_GetGroupName_Columbia"
-	}
-	names = {
-		trigger = {
-			OR = {
-				tag = GBR
-				tag = ENG
-			}
-			culture_group = british
-		}
-		name = "COLONIAL_CALIFORNIA_New_Albion"
-	}
-	# Generic
-	names = {
-		name = "COLONIAL_CALIFORNIA_California"
-	}
-	names = {
-		trigger = { owns = 2481 } # Klamath
-		name = "COLONIAL_CALIFORNIA_Oregon"
-	}
-	names = {
-		name = "COLONIAL_CALIFORNIA_Root_Culture_GetGroupName_Columbia"
-	}
-	names = {
-		name = "COLONIAL_REGION_New_Root_GetName"
-	}
-}
-
 # Mexico
 colonial_mexico = {
 	color = { 231 181 12 }
@@ -719,6 +406,11 @@ colonial_mexico = {
 		2665 2666 2667 2668 2669
 		4632 4631 4630 4628 4629 4627 4606 4644 4646 4648 4647 4645 4643 4642 4578 4640 4576 4579 4580 4575 4574 4573 4641 4572 4571 4570 4581 4583 4598 4582 4584 4585 4586 4587 4594 4589 4588 4590 4591 4593
 		4909 4910 4911
+		868 867 876 875 870 869 871 2021
+		2476 2477 2478 2479 2480 2491
+		2493
+		4638 4637 4636 4635 4634
+		865 866 2620 4639 4577 2616 4650 862 4649 877 4633 # beja california, arizona, and sonoria
 	}
 
 	# Specific
