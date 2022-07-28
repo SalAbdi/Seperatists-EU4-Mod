@@ -97,7 +97,7 @@ country_event = {
 			name = "Roman"
 			dynasty = "Musat"
 			age = 20
-			claim = 75
+			claim = 90
 		}
 		if = {
 			limit = {
@@ -128,7 +128,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 20
+			factor = 5
 		}
 		set_global_flag = mol_hungarian_march
 		define_ruler = {
@@ -170,7 +170,7 @@ country_event = {
 	option = { # Independence
 		name = "flavor_mol.2.c"
 		ai_chance = {
-			factor = 15
+			factor = 5
 		}
 		add_opinion = {
 			who = POL

@@ -336,7 +336,7 @@ NDiplomacy = {
 
 	DIPLOMAT_SPEED = 20.0,							-- DIPLOMAT_SPEED
 	DIPLOMAT_COOLDOWN_TIME = 1,						-- DIPLOMATIC ACTION COOLDOWN IN MONTHS
-	MIN_RELATIONS_TO_ALLY = -25,						-- Alliances not possible if either country has an opinion of the other lower than this
+	MIN_RELATIONS_TO_ALLY = -200,						-- Alliances not possible if either country has an opinion of the other lower than this
 	MIN_RELATIONS_TO_SUPPORT_INDEPENDENCE = -25,	-- Support Independence not possible if either country has an opinion of the other lower than this
 
 	ELECTIVE_VICTORY_PRESTIGE = 25,				-- Prestige for getting a heir from your country onto the throne of an elective nation
@@ -448,8 +448,8 @@ NDiplomacy = {
 	CHARTER_COMPANY_BASE_COST = 1000,
 	CHARTER_COMPANY_MINIMUM_COST = 100,
 
-	GOOD_RELATIONS = 100,
-	GREAT_RELATIONS = 150,
+	GOOD_RELATIONS = 200,
+	GREAT_RELATIONS = 200,
 
 	FORCE_JOIN_HRE_AUTHORITY_PER_DEVELOPMENT = 0.1,
 	FORCE_JOIN_HRE_YEARS_BOUND_BY_TREATY = 50,
@@ -507,7 +507,7 @@ NCountry = {
 	ABDICATE_PRESTIGE_HIT = -50,
 
 
-	DISINHERIT_PRESTIGE_HIT = -50,
+	DISINHERIT_PRESTIGE_HIT = -25,
 	DISINHERIT_PRESTIGE_THRESHOLD = 0,
 	
 	NEW_HEIR_PRESTIGE_HIT = -20,
@@ -698,7 +698,7 @@ NCountry = {
 	BASE_POWER_INCREASE = 3,						-- monthly base increase
 	NAT_FOCUS_DECREASE = -1,							-- power taken away from non national focus power
 	NAT_FOCUS_INCREASE = 2,							-- extra power given to national focus power
-	NAT_FOCUS_YEARS = 25,							-- years before you can change focus again
+	NAT_FOCUS_YEARS = 10,							-- years before you can change focus again
 	NAT_FOCUS_YEARS_RANK = 5,						-- how many years are removed from nat focus cooldown per gov rank above 1
 	POWER_MAX = 999,								-- how much power can be stored at maximum.
 	DISMANTLE_HRE_PRESTIGE = 100,					-- Prestige gain on dismantling HRE
@@ -800,8 +800,8 @@ NCountry = {
 	CALL_ALLY_DECLINE_PRESTIGE_PENALTY = -25.0,		-- Prestige penalty for declining call for arms
 	CLAIM_THRONE_PRESTIGE_PENALTY = -20.0,			-- Prestige penalty when claiming throne
 	BREAK_VASSAL_PRESTIGE_PENALTY = -25.0,			-- Prestige penalty when break vassalisation
-	BREAK_MARRIAGE_PRESTIGE_PENALTY = -10,			-- Prestige penalty when break royal marriage
-	BREAK_MARRIAGE_STABILITY_PENALTY = -1,			-- Stability penalty when break royal marriage
+	BREAK_MARRIAGE_PRESTIGE_PENALTY = -5,			-- Prestige penalty when break royal marriage
+	BREAK_MARRIAGE_STABILITY_PENALTY = 0,			-- Stability penalty when break royal marriage
 	FORM_MARRIAGE_HIGHER_PRESTIGE = -2,				-- Legitimacy Change when forming a royal marriage while having more Prestige than the other country.
 	FORM_MARRIAGE_HIGHER_LEGITIMACY = -3,			-- Legitimacy Change when forming a royal marriage while having more legitimacy than the other country.
 	ANNEX_OR_INTEGRATE_PRESTIGE = 5.0,				-- Prestige gain on diplomatic annex or integrate
@@ -1185,7 +1185,7 @@ NEconomy = {
 	MIN_ARMY_MAINTENANCE = 0.1,
 	MIN_NAVY_MAINTENANCE = 0.1,
 	CARAVAN_FACTOR = 3.0,							-- Development is divided by this factor, do not set to zero!
-	CARAVAN_POWER_MAX = 50,
+	CARAVAN_POWER_MAX = 10,
 	CARAVAN_POWER_MIN = 2,
 	MAX_BUILDING_SLOTS = 12,						-- Maximum number of buildings slots, i.e. max buildings possible.
 	COT_BUILDING_SLOTS = 2,							-- Number of slots used by a Center of Trade.
@@ -1337,12 +1337,12 @@ NMilitary = {
 	DELIBERATE_RETREAT_MORALE_PENALTY = 1,			-- Penalty to morale for units remaining in battle when performing a deliberate retreat with a unit. This value * maximum morale * fraction of army that unit represents is the amount lost.
 	LOW_MORALE_THRESHOLD = 0.50,					-- Under this percentage of the morale, the army will do a shattered retreat
 	UNIT_TYPE_CHANGE_MAX_MORALE = 0.51,				-- Changing a unit type will reduce morale to min(UNIT_TYPE_CHANGE_MAX_MORALE, current morale)
-	DEFAULT_WARGOAL_TICKINGWARSCORE_BONUS = 0.4,		-- Amount of warscore per month since attacker/defender started getting the bonus for completing war goal
-	WARGOAL_MAX_BONUS = 25,
+	DEFAULT_WARGOAL_TICKINGWARSCORE_BONUS = 1,		-- Amount of warscore per month since attacker/defender started getting the bonus for completing war goal
+	WARGOAL_MAX_BONUS = 40,
 	DEFAULT_WARGOAL_WARSCORE_BONUS	= 5,			-- Warscore bonus
 	DEFAULT_WARGOAL_BATTLESCORE_BONUS = 3,		-- Battle score bonus from winning battles
 	SUPERIORITY_WARGOAL_WARSCORE_THRESHOLD	= 10,	-- Needed battle score for getting ticking war score for war goal superiority
-	WARSCORE_MAX_FROM_BATTLES = 40,					-- maximum amount to get from a battles .
+	WARSCORE_MAX_FROM_BATTLES = 50,					-- maximum amount to get from a battles .
 	WAR_ENTHUSIASM_HIGH_THRESHOLD = -20,			-- desire for peace must be less than this for high war enthuasiasm
 	WAR_ENTHUSIASM_LOW_THRESHOLD = 0,				-- desire for peace must be more than this for low war enthusiasm
 	EXPLORATION_TRAVEL_TIME = 3,					-- Multiplier for travel time when exploring
@@ -1597,7 +1597,7 @@ NAI = {
 
 	DEBASE_THRESHOLD = 10000,-- AI will not debase if it has more gold than this.
 
-	DEVELOPMENT_CAP_BASE = 10,	-- AI will not develop provinces that have more development than this or DEVELOPMENT_CAP_MULT*original development (whichever is bigger)
+	DEVELOPMENT_CAP_BASE = 30,	-- AI will not develop provinces that have more development than this or DEVELOPMENT_CAP_MULT*original development (whichever is bigger)
 	DEVELOPMENT_CAP_MULT = 2,
 
 	PEACE_BASE_RELUCTANCE = 0, -- AI base stubbornness to refuse peace (always applied)

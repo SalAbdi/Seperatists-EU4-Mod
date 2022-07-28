@@ -373,9 +373,6 @@ townships = {
 		army_tradition = 0.025
 	}
 	
-	company_region_modifier = {
-		trade_value_modifier = 0.1
-	}
 	
 	ai_global_worth = { factor = 0 }
 	ai_area_worth = { factor = 1 }
