@@ -151,7 +151,7 @@ NDiplomacy = {
 	JUSTIFY_TRADE_CONFLICT_ACTOR_LIMIT = 0.1,	-- How big share of the trade power needed on the actor to be able to justify a trade conflict
 	PRESTIGE_PENALTY_ON_DISCOVER_JTC = -5,
 	MIN_ASKED_TRADE_POWER = 10,					-- Minimum % of someone's trade power can be asked for with the diplomatic action
-	MAX_ASKED_TRADE_POWER = 50,					-- Maximum % of someone's trade power can be asked for with the diplomatic action
+	MAX_ASKED_TRADE_POWER = 100,					-- Maximum % of someone's trade power can be asked for with the diplomatic action
 	MIN_PAPAL_INFLUENCE_TO_PREVENT_EXCOMMUNICATION = 50, -- Papal influence that prevents excommunication
 
 	HRE_VOTE_ENEMY = -200,
@@ -332,7 +332,7 @@ NDiplomacy = {
 	WARGOAL_PEACE_FRACTION = 0.66,					-- Fraction of warscore you need for wargoal
 	CLAIM_PEACE_COST_DIP_FRACTION = -0.1,			-- Fraction of dipcost you pay for claims
 	CORE_PEACE_COST_DIP_FRACTION = -0.2,			-- Fraction of dipcost you pay for cores
-	CANCEL_TRADE_TRANSFER_PRESTIGE_HIT = -5,
+	CANCEL_TRADE_TRANSFER_PRESTIGE_HIT = 0,
 
 	DIPLOMAT_SPEED = 20.0,							-- DIPLOMAT_SPEED
 	DIPLOMAT_COOLDOWN_TIME = 1,						-- DIPLOMATIC ACTION COOLDOWN IN MONTHS
@@ -737,7 +737,7 @@ NCountry = {
 	PS_MOVE_CAPITAL_EXTRA = 20,						-- Per 100 country development.
 	PS_MOVE_CAPITAL_DISTANCE = 10,					-- How many pixels distance per 1 Adm.
 	PS_MOVE_CAPITAL_DISTANCE_CAP = 300,				-- How much this penalty is allowed to cost in Adm.
-	PS_MOVE_TRADE_PORT = 200,
+	PS_MOVE_TRADE_PORT = 50,
 	PS_REPLACE_RIVAL = 100,
 	PS_SEIZE_COLONY = 25,
 	PS_BURN_COLONY = 5,
@@ -1154,7 +1154,7 @@ NEconomy = {
 	COLONIST_CHANCE = 0.05,							-- _EDEF_COLONIST_CHANCE_
 	MISSIONARY_TIME_BASE = 1000,					-- _EDEF_MISSIONARY_TIME_BASE = 10,
 	MISSIONARY_TIME_DISTANCE = 0.2,					-- _EDEF_MISSIONARY_TIME_DISTANCE = 10,
-	TRADE_WIND_STRENGTH = 0.5,						-- _EDEF_TRADE_WIND_STRENGTH_
+	TRADE_WIND_STRENGTH = 0.1,						-- _EDEF_TRADE_WIND_STRENGTH_
 	MERCHANT_COMPETE_PERCENT_OWNED_BASE = 0.25,		-- _EDEF_MERCHANT_COMPETE_PERCENT_OWNED_BASE_
 	TRADED_FRACTION_FOR_BONUS = 0.20,				-- _EDEF_TRADED_FRACTION_FOR_BONUS_
 	OPEN_SEA_MODIFIER = 1.7,						-- _EDEF_OPEN_SEA_MODIFIER_
